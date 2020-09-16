@@ -351,3 +351,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+*.config
+*.sln
+*.resx
+*.settings
+Meu Editor de Textos/Editor de Texto/Editor de Texto.csproj

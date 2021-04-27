@@ -73,6 +73,7 @@ namespace Cyber_FerCesar_Sistema
             // 
             // Btn_entar
             // 
+            this.Btn_entar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_entar.Location = new System.Drawing.Point(99, 211);
             this.Btn_entar.Name = "Btn_entar";
             this.Btn_entar.Size = new System.Drawing.Size(114, 38);

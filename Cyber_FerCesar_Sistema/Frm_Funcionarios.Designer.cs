@@ -30,28 +30,28 @@ namespace Cyber_FerCesar_Sistema
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Txt_natural = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.Txt_nome = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Txt_BI = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.Txt_mae = new System.Windows.Forms.TextBox();
             this.Txt_pai = new System.Windows.Forms.TextBox();
-            this.Txt_BI = new System.Windows.Forms.TextBox();
-            this.Txt_natural = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Mtxt_telefone = new System.Windows.Forms.MaskedTextBox();
-            this.Txt_email = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.Txt_facebook = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Txt_email = new System.Windows.Forms.TextBox();
+            this.Mtxt_telefone = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.Txt_bairro = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Txt_municipio = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.Txt_bairro = new System.Windows.Forms.TextBox();
+            this.Txt_municipio = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.Pb_foto = new System.Windows.Forms.PictureBox();
             this.Btn_foto = new System.Windows.Forms.Button();
             this.Btn_novo = new System.Windows.Forms.Button();
@@ -84,14 +84,23 @@ namespace Cyber_FerCesar_Sistema
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
             // 
-            // label1
+            // Txt_natural
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome :";
+            this.Txt_natural.Enabled = false;
+            this.Txt_natural.Location = new System.Drawing.Point(6, 153);
+            this.Txt_natural.Name = "Txt_natural";
+            this.Txt_natural.Size = new System.Drawing.Size(281, 20);
+            this.Txt_natural.TabIndex = 4;
+            this.Txt_natural.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Naturalidade";
             // 
             // Txt_nome
             // 
@@ -101,6 +110,51 @@ namespace Cyber_FerCesar_Sistema
             this.Txt_nome.Size = new System.Drawing.Size(281, 20);
             this.Txt_nome.TabIndex = 1;
             this.Txt_nome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 98);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Nº do BI";
+            // 
+            // Txt_BI
+            // 
+            this.Txt_BI.Enabled = false;
+            this.Txt_BI.Location = new System.Drawing.Point(6, 114);
+            this.Txt_BI.Name = "Txt_BI";
+            this.Txt_BI.Size = new System.Drawing.Size(281, 20);
+            this.Txt_BI.TabIndex = 3;
+            this.Txt_BI.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(229, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "e de ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Filho de ";
             // 
             // Txt_mae
             // 
@@ -120,60 +174,6 @@ namespace Cyber_FerCesar_Sistema
             this.Txt_pai.TabIndex = 2;
             this.Txt_pai.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // Txt_BI
-            // 
-            this.Txt_BI.Enabled = false;
-            this.Txt_BI.Location = new System.Drawing.Point(6, 114);
-            this.Txt_BI.Name = "Txt_BI";
-            this.Txt_BI.Size = new System.Drawing.Size(281, 20);
-            this.Txt_BI.TabIndex = 3;
-            this.Txt_BI.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // Txt_natural
-            // 
-            this.Txt_natural.Enabled = false;
-            this.Txt_natural.Location = new System.Drawing.Point(6, 153);
-            this.Txt_natural.Name = "Txt_natural";
-            this.Txt_natural.Size = new System.Drawing.Size(281, 20);
-            this.Txt_natural.TabIndex = 4;
-            this.Txt_natural.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Filho de ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(229, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "e de ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Nº do BI";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Naturalidade";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.Txt_facebook);
@@ -188,41 +188,6 @@ namespace Cyber_FerCesar_Sistema
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Contactos";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Telefone";
-            // 
-            // Mtxt_telefone
-            // 
-            this.Mtxt_telefone.Enabled = false;
-            this.Mtxt_telefone.Location = new System.Drawing.Point(6, 37);
-            this.Mtxt_telefone.Mask = "(+244)000-000-000";
-            this.Mtxt_telefone.Name = "Mtxt_telefone";
-            this.Mtxt_telefone.Size = new System.Drawing.Size(191, 20);
-            this.Mtxt_telefone.TabIndex = 1;
-            // 
-            // Txt_email
-            // 
-            this.Txt_email.Enabled = false;
-            this.Txt_email.Location = new System.Drawing.Point(6, 80);
-            this.Txt_email.Name = "Txt_email";
-            this.Txt_email.Size = new System.Drawing.Size(191, 20);
-            this.Txt_email.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Email";
             // 
             // Txt_facebook
             // 
@@ -241,6 +206,41 @@ namespace Cyber_FerCesar_Sistema
             this.label8.TabIndex = 4;
             this.label8.Text = "Facebook";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Email";
+            // 
+            // Txt_email
+            // 
+            this.Txt_email.Enabled = false;
+            this.Txt_email.Location = new System.Drawing.Point(6, 80);
+            this.Txt_email.Name = "Txt_email";
+            this.Txt_email.Size = new System.Drawing.Size(191, 20);
+            this.Txt_email.TabIndex = 2;
+            // 
+            // Mtxt_telefone
+            // 
+            this.Mtxt_telefone.Enabled = false;
+            this.Mtxt_telefone.Location = new System.Drawing.Point(6, 37);
+            this.Mtxt_telefone.Mask = "(+244)000-000-000";
+            this.Mtxt_telefone.Name = "Mtxt_telefone";
+            this.Mtxt_telefone.Size = new System.Drawing.Size(191, 20);
+            this.Mtxt_telefone.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Telefone";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label10);
@@ -254,6 +254,15 @@ namespace Cyber_FerCesar_Sistema
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Localização";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 67);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 13);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Municipio";
+            // 
             // Txt_bairro
             // 
             this.Txt_bairro.Enabled = false;
@@ -261,6 +270,14 @@ namespace Cyber_FerCesar_Sistema
             this.Txt_bairro.Name = "Txt_bairro";
             this.Txt_bairro.Size = new System.Drawing.Size(254, 20);
             this.Txt_bairro.TabIndex = 3;
+            // 
+            // Txt_municipio
+            // 
+            this.Txt_municipio.Enabled = false;
+            this.Txt_municipio.Location = new System.Drawing.Point(6, 83);
+            this.Txt_municipio.Name = "Txt_municipio";
+            this.Txt_municipio.Size = new System.Drawing.Size(254, 20);
+            this.Txt_municipio.TabIndex = 5;
             // 
             // label9
             // 
@@ -271,27 +288,10 @@ namespace Cyber_FerCesar_Sistema
             this.label9.TabIndex = 4;
             this.label9.Text = "Bairro";
             // 
-            // Txt_municipio
-            // 
-            this.Txt_municipio.Enabled = false;
-            this.Txt_municipio.Location = new System.Drawing.Point(6, 83);
-            this.Txt_municipio.Name = "Txt_municipio";
-            this.Txt_municipio.Size = new System.Drawing.Size(254, 20);
-            this.Txt_municipio.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 67);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 13);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Municipio";
-            // 
             // Pb_foto
             // 
             this.Pb_foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pb_foto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Pb_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pb_foto.Image = global::Cyber_FerCesar_Sistema.Properties.Resources.Usuario;
             this.Pb_foto.Location = new System.Drawing.Point(570, 90);
             this.Pb_foto.Name = "Pb_foto";
@@ -340,6 +340,7 @@ namespace Cyber_FerCesar_Sistema
             this.Btn_gerir.TabIndex = 7;
             this.Btn_gerir.Text = "Gerir Funcionários";
             this.Btn_gerir.UseVisualStyleBackColor = true;
+            this.Btn_gerir.Click += new System.EventHandler(this.Btn_gerir_Click);
             // 
             // Btn_fechar
             // 
@@ -369,8 +370,11 @@ namespace Cyber_FerCesar_Sistema
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Frm_Funcionarios";
-            this.Text = "Cadastro de Funcionários";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Funcionários - Cyber Fercésar";
             this.Load += new System.EventHandler(this.Frm_Funcionarios_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

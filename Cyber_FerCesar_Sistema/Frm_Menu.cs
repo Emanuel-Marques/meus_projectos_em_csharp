@@ -58,5 +58,53 @@ namespace Cyber_FerCesar_Sistema
             Frm_CadUsuario frm_CadUsuario = new Frm_CadUsuario();
             frm_CadUsuario.Show();
         }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_CadProdutos frm_CadProdutos = new Frm_CadProdutos();
+            frm_CadProdutos.Show();
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_CadCliente frm_CadCliente = new Frm_CadCliente();
+            frm_CadCliente.Show();
+        }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoClientes frm_GestaoClientes = new Frm_GestaoClientes();
+            frm_GestaoClientes.Show();
+        }
+
+        private void usuárioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoUsuarios frm_GestaoUsuarios = new Frm_GestaoUsuarios();
+            frm_GestaoUsuarios.Show();
+        }
+
+        private void produtoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoProd frm_GestaoProd = new Frm_GestaoProd();
+            frm_GestaoProd.Show();
+        }
+
+        private void fornecedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoFornecedor frm_GestaoFornecedor = new Frm_GestaoFornecedor();
+            frm_GestaoFornecedor.Show();
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_CadFornecedor frm_CadFornecedor = new Frm_CadFornecedor();
+            frm_CadFornecedor.Show();
+        }
+
+        private void funcionárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoFuncionarios frm_GestaoFuncionarios = new Frm_GestaoFuncionarios();
+            frm_GestaoFuncionarios.Show();
+        }
     }
 }

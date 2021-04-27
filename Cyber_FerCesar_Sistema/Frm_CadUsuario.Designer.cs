@@ -37,16 +37,17 @@ namespace Cyber_FerCesar_Sistema
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Txt_senha2 = new System.Windows.Forms.TextBox();
-            this.Cb_nivel = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Btn_novo = new System.Windows.Forms.Button();
-            this.Btn_salvar = new System.Windows.Forms.Button();
-            this.Btn_GerirUsuarios = new System.Windows.Forms.Button();
             this.Btn_fechar = new System.Windows.Forms.Button();
+            this.Btn_GerirUsuarios = new System.Windows.Forms.Button();
+            this.Btn_salvar = new System.Windows.Forms.Button();
+            this.Btn_novo = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Cb_status = new System.Windows.Forms.ComboBox();
+            this.Nud_nivel = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_nivel)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,15 +119,6 @@ namespace Cyber_FerCesar_Sistema
             this.Txt_senha2.Size = new System.Drawing.Size(248, 20);
             this.Txt_senha2.TabIndex = 7;
             // 
-            // Cb_nivel
-            // 
-            this.Cb_nivel.Enabled = false;
-            this.Cb_nivel.FormattingEnabled = true;
-            this.Cb_nivel.Location = new System.Drawing.Point(15, 115);
-            this.Cb_nivel.Name = "Cb_nivel";
-            this.Cb_nivel.Size = new System.Drawing.Size(221, 21);
-            this.Cb_nivel.TabIndex = 8;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -148,38 +140,6 @@ namespace Cyber_FerCesar_Sistema
             this.panel1.Size = new System.Drawing.Size(517, 31);
             this.panel1.TabIndex = 10;
             // 
-            // Btn_novo
-            // 
-            this.Btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_novo.Location = new System.Drawing.Point(4, 4);
-            this.Btn_novo.Name = "Btn_novo";
-            this.Btn_novo.Size = new System.Drawing.Size(106, 23);
-            this.Btn_novo.TabIndex = 0;
-            this.Btn_novo.Text = "Novo";
-            this.Btn_novo.UseVisualStyleBackColor = true;
-            this.Btn_novo.Click += new System.EventHandler(this.Btn_novo_Click);
-            // 
-            // Btn_salvar
-            // 
-            this.Btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_salvar.Location = new System.Drawing.Point(116, 5);
-            this.Btn_salvar.Name = "Btn_salvar";
-            this.Btn_salvar.Size = new System.Drawing.Size(113, 23);
-            this.Btn_salvar.TabIndex = 1;
-            this.Btn_salvar.Text = "Salvar";
-            this.Btn_salvar.UseVisualStyleBackColor = true;
-            this.Btn_salvar.Click += new System.EventHandler(this.Btn_salvar_Click);
-            // 
-            // Btn_GerirUsuarios
-            // 
-            this.Btn_GerirUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_GerirUsuarios.Location = new System.Drawing.Point(235, 4);
-            this.Btn_GerirUsuarios.Name = "Btn_GerirUsuarios";
-            this.Btn_GerirUsuarios.Size = new System.Drawing.Size(127, 23);
-            this.Btn_GerirUsuarios.TabIndex = 2;
-            this.Btn_GerirUsuarios.Text = "Gerir Usuários";
-            this.Btn_GerirUsuarios.UseVisualStyleBackColor = true;
-            // 
             // Btn_fechar
             // 
             this.Btn_fechar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -190,6 +150,40 @@ namespace Cyber_FerCesar_Sistema
             this.Btn_fechar.Text = "Fechar";
             this.Btn_fechar.UseVisualStyleBackColor = true;
             this.Btn_fechar.Click += new System.EventHandler(this.Btn_fechar_Click);
+            // 
+            // Btn_GerirUsuarios
+            // 
+            this.Btn_GerirUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_GerirUsuarios.Location = new System.Drawing.Point(235, 4);
+            this.Btn_GerirUsuarios.Name = "Btn_GerirUsuarios";
+            this.Btn_GerirUsuarios.Size = new System.Drawing.Size(127, 23);
+            this.Btn_GerirUsuarios.TabIndex = 2;
+            this.Btn_GerirUsuarios.Text = "Gerir Usuários";
+            this.Btn_GerirUsuarios.UseVisualStyleBackColor = true;
+            this.Btn_GerirUsuarios.Click += new System.EventHandler(this.Btn_GerirUsuarios_Click);
+            // 
+            // Btn_salvar
+            // 
+            this.Btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_salvar.Enabled = false;
+            this.Btn_salvar.Location = new System.Drawing.Point(116, 5);
+            this.Btn_salvar.Name = "Btn_salvar";
+            this.Btn_salvar.Size = new System.Drawing.Size(113, 23);
+            this.Btn_salvar.TabIndex = 1;
+            this.Btn_salvar.Text = "Salvar";
+            this.Btn_salvar.UseVisualStyleBackColor = true;
+            this.Btn_salvar.Click += new System.EventHandler(this.Btn_salvar_Click);
+            // 
+            // Btn_novo
+            // 
+            this.Btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_novo.Location = new System.Drawing.Point(4, 4);
+            this.Btn_novo.Name = "Btn_novo";
+            this.Btn_novo.Size = new System.Drawing.Size(106, 23);
+            this.Btn_novo.TabIndex = 0;
+            this.Btn_novo.Text = "Novo";
+            this.Btn_novo.UseVisualStyleBackColor = true;
+            this.Btn_novo.Click += new System.EventHandler(this.Btn_novo_Click);
             // 
             // label6
             // 
@@ -209,16 +203,30 @@ namespace Cyber_FerCesar_Sistema
             this.Cb_status.Size = new System.Drawing.Size(248, 21);
             this.Cb_status.TabIndex = 12;
             // 
+            // Nud_nivel
+            // 
+            this.Nud_nivel.Enabled = false;
+            this.Nud_nivel.Location = new System.Drawing.Point(15, 115);
+            this.Nud_nivel.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Nud_nivel.Name = "Nud_nivel";
+            this.Nud_nivel.Size = new System.Drawing.Size(221, 20);
+            this.Nud_nivel.TabIndex = 13;
+            this.Nud_nivel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Frm_CadUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 196);
+            this.Controls.Add(this.Nud_nivel);
             this.Controls.Add(this.Cb_status);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.Cb_nivel);
             this.Controls.Add(this.Txt_senha2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -231,9 +239,10 @@ namespace Cyber_FerCesar_Sistema
             this.MaximizeBox = false;
             this.Name = "Frm_CadUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadstro de Usuário";
+            this.Text = "Cadstro de Usuário - Cyber Fercésar";
             this.Load += new System.EventHandler(this.Frm_CadUsuario_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_nivel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +258,6 @@ namespace Cyber_FerCesar_Sistema
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Txt_senha2;
-        private System.Windows.Forms.ComboBox Cb_nivel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Btn_fechar;
@@ -258,5 +266,6 @@ namespace Cyber_FerCesar_Sistema
         private System.Windows.Forms.Button Btn_novo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox Cb_status;
+        private System.Windows.Forms.NumericUpDown Nud_nivel;
     }
 }

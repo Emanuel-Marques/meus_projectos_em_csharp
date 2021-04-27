@@ -140,7 +140,7 @@ namespace Cyber_FerCesar_Sistema
          ",Txt_nome.Text,Txt_pai.Text,Txt_mae.Text,Txt_BI.Text,Txt_natural.Text,Mtxt_telefone.Text,Txt_email.Text,Txt_facebook.Text,Txt_bairro.Text,Txt_municipio.Text,destinoCompleto);
 
             Banco.dml(query);
-            MessageBox.Show("Funcionárion Cadastrado!");
+            MessageBox.Show("Funcionário Cadastrado!");
 
             Txt_nome.Enabled = false;
             Txt_pai.Enabled = false;
@@ -173,6 +173,13 @@ namespace Cyber_FerCesar_Sistema
                 }
             }
             Pb_foto.ImageLocation = origemCompleto;
+        }
+
+        private void Btn_gerir_Click(object sender, EventArgs e)
+        {
+            Frm_GestaoFuncionarios frm_GestaoFuncionarios = new Frm_GestaoFuncionarios();
+            frm_GestaoFuncionarios.Show();
+            this.Close();
         }
     }
 }
